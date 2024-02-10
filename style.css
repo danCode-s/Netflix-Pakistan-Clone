@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 40px 14vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+
+    margin: 10px;
+    
+}
+
+
+nav ul li,
+button {
+    cursor: pointer;
+}
+
+nav ul button {
+
+    font-weight: bold;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 10px 21px;
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(1) {
+    width: 150px;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-image: url(assets/bg.jpg);
+    background-position: center center;
+    background-size: max(1300px, 100vw);
+    background-repeat: no-repeat;
+    filter:opacity(0.6);
+    width: 100%;
+    height: 650px;
+    box-shadow: -2px 25px 157px 61px rgba(0, 0, 0, 0.74) inset;
+    
+
+}
+
+
+.hero-txt{
+    
+    word-spacing: -2px;
+    text-align: center;
+    height:calc(600px - 100px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-txt h2{
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.hero-txt p{
+    word-spacing: -3px;
+    font-weight: 400;
+    margin: 10px 0px;
+    font-size: 24px;
+}
+
+
+.entry input{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(32, 31, 31, 0.553);
+    padding: 25px 200px 20px 15px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(247, 247, 247, 0.797);
+}
+
+.entry input::placeholder{
+    height: 100%;
+    font-size: 1.1rem;
+    color: rgba(247, 247, 247, 0.797);
+}
+
+.entry button{
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    
+}
+
+.separation{
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.boards{
+    text-align: center;
+    height: 100%;
+    color: white;
+    margin: 50px 10vw;
+    /* background-color: red; */
+    
+    position: relative;
+}
+
+ 
+.boards img{
+    width: 455px;
+}
+
+.boards .sec{
+    height: 100%;
+
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   
+}
+
+
+.boards .sec video{
+    z-index: -1;
+    width: 355px;
+    position: absolute;
+    right: 36px;
+
+    top: 80px;
+    
+}
+.boards .sec h1{
+    font-size: 48px;
+}
+.boards .sec span{
+    font-size: 24px;
+}
+
+.third{
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+
+.third .sec{
+    margin-left: 10vw;  
+    text-align: left;
+    margin-right: 38vw;
+}
+
+
+.fifth .sec{
+    
+    font-size: 48px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+    margin: 0 20px;
+    
+
+}
+
+
+
+
+
+.fifth .sec .sectxt{
+    text-align: center;
+    
+    width: 100%;
+}
+.faqs {
+
+    margin-top: 2vh;
+    height: 70px;
+    padding: 6px 26px 6px 17px;
+    display: flex;
+    background-color: rgb(43, 43, 43);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+
+.hero-txt:nth-child(2){
+    margin: 20px 0px;
+    height: 50%;
+    align-items: center;
+    
+    padding: 0;
+}
+
+footer{
+    height: 60vh;
+    margin: 50px 12vw;
+    
+    
+}
+footer div a{
+    font-weight: bold;
+    padding: 40px 10px;
+    color: rgb(134, 132, 132);
+
+}
+
+.last{
+    
+    margin-top: 50px;
+}
+.grid-contain{
+    
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 20px;    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    color: white;
+
+}   
+
+.grid-contain div{
+    padding: 10px;
+}
+@media screen and (max-width: 960px){
+    
+    nav ul li:nth-child(1){
+        width: 100px;
+
+    }
+    .hero-txt{
+        height:calc(608px - 100px);
+        
+    }    
+
+    .boards .sec{
+        flex-direction: column;
+    }
+    .boards .sec img{
+        width: 55vw;
+    }
+    .boards .sec video{
+        width: 47vw;
+        /* right: 11px; */
+        left: 20%;
+        top: 33vh;  
+    }
+
+    .third .sec{
+        margin: 0 2vw;
+        text-align: center;
+        
+    }
+
+    
+    
+    
+}   
+@media screen and (max-width: 650px){
+
+
+    .grid-contain {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .entry input{
+        margin: 2vh 5vw;
+        padding: 25px 170px 20px 15px;
+    }
+    .hero-txt h2{
+        font-size: 32px;
+
+
+    }
+
+    .hero-txt p{
+        word-spacing: normal;
+        font-size: 20px;
+    }
+
+    .boards .sec video{
+        width: 45vw;
+    top: 25vh;
+    }
+    .boards .sec h1{
+        font-size: 32px;
+    }
+    .boards .sec span{
+        font-size: 18px;
+
+    }
+
+    .third .sec{
+        text-align: center; 
+    }
+    
+    
+
+}
+
+
+@media screen and (max-width: 380px){
+    nav button{
+        font-size: 0.5rem;
+    }
+    
+    .hero-txt{
+        height:calc(646px - 120px)
+    }
+    .hero-txt h2{
+        font-size: 24px;
+    }
+    .hero-txt p{
+        font-size: 16px;
+    }
+    
+    nav ul {
+        margin: 5vh 9vw;       
+    }
+    .entry input{
+        margin-top: 0;
+        margin-left: 20px;
+        padding: 20px 80px 15px 5px;
+    }
+
+    .entry button{
+        padding: 10px 20px;
+    }
+
+    .boards .sec h1{
+        font-size: 28px;
+
+    }
+    .boards .sec video{
+        top: 30vh;
+    }
+    .boards .sec span{
+        font-size: 16px;
+    }
+
+    .faqs{
+        height: 50px;
+        font-size: 12px;
+    }
+}
